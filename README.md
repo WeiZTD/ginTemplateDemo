@@ -9,4 +9,5 @@ A database search website demo build with [Gin-Gonic](https://github.com/gin-gon
 
 ## Installing
 1.Import articles.sql to your database.
-2.Run main.go
+2.Edit database user and password in handler/database.go
+3.Run main.go
