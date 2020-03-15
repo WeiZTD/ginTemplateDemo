@@ -3,15 +3,15 @@
 A database search website demo build with [Gin-Gonic](https://github.com/gin-gonic).
 
 ## Prerequisites
-1.MySQL or [MariaDB](https://mariadb.org/) database 
+* MySQL or [MariaDB](https://mariadb.org/) database 
 
-2.[Gin-Gonic](https://github.com/gin-gonic)  
+* [Gin-Gonic](https://github.com/gin-gonic)  
 
-3.[GORM](https://github.com/jinzhu/gorm)  
+* [GORM](https://github.com/jinzhu/gorm)  
 
 ## Installing
-1.Import articles.sql to your database.  
+1. Import articles.sql to your database.  
 
-2.Edit database username and password in handler/database.go  
+2. Edit database username and password in handler/database.go  
 
-3.Run main.go  
+3. Run main.go  
