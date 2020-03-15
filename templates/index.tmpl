@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PTT 爬蟲備份文章查詢</title>
+
+<body>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css">
+    <form class="pure-form" action="/result" method="post">
+        <legend>
+            <h2>PTT 爬蟲備份文章查詢</h2>
+        </legend>
+        <legend>
+            <input type="text" class="pure-input-rounded" placeholder="版面" name="board">
+            <input type="text" class="pure-input-rounded" placeholder="作者ID" name="author">
+            <button type="submit" class="pure-button">查詢</button>
+        </legend>
+        <table class="pure-table pure-table-bordered">
+            <thead>
+                <tr>
+                    <th>作者</th>
+                    <th>標題</th>
+                    <th>內容</th>
+                    <th>回應</th>
+                    <th>文章連結</th>
+                </tr>
+            </thead>
+            {{if .articles}}
+            {{range $.articles}}
+            <tbody>
+                <tr>
+                    <td>{{.Author}}</td>
+                    <td>{{.Title}}</td>
+                    <td>{{.Contains}}</td>
+                    <td>{{.Reply}}</td>
+                    <td><a href="{{.Url}}" target="_blank">連結</a></td>
+                </tr>
+            </tbody>
+            {{end}}
+            {{end}}
+        </table>
+        {{if .error}}
+        <script>alert({{.error }})</script>
+        {{end}}
+
+</html>
