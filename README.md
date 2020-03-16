@@ -1,6 +1,6 @@
 # ginTemplateDemo
 
-A database search website demo build with [Gin-Gonic](https://github.com/gin-gonic).
+A database search website demo build with [Gin](https://github.com/gin-gonic/gin).
 
 ## Prerequisites
 * MySQL or [MariaDB](https://mariadb.org/) database 
